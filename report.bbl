@@ -1,0 +1,122 @@
+\begin{thebibliography}{10}
+
+\bibitem{cb}
+Chinabyte. 2017. 5 robots for kids worth paying for. (2017).
+  http://news.chinabyte.com/295/14160795.shtml.
+
+\bibitem{abdul2015survey}
+Sameera~A Abdul-Kader and John Woods.
+\newblock Survey on chatbot design techniques in speech conversation systems.
+\newblock {\em Int. J. Adv. Comput. Sci. Appl.(IJACSA)}, 6(7), 2015.
+
+\bibitem{aggarwal2016recommender}
+Charu~C Aggarwal.
+\newblock {\em Recommender systems}.
+\newblock Springer, 2016.
+
+\bibitem{breese1998empirical}
+John~S Breese, David Heckerman, and Carl Kadie.
+\newblock Empirical analysis of predictive algorithms for collaborative
+  filtering.
+\newblock In {\em Proceedings of the Fourteenth conference on Uncertainty in
+  artificial intelligence}, pages 43--52. Morgan Kaufmann Publishers Inc.,
+  1998.
+
+\bibitem{brett1996vocabulary}
+Arlene Brett, Liz Rothlein, and Michael Hurley.
+\newblock Vocabulary acquisition from listening to stories and explanations of
+  target words.
+\newblock {\em The Elementary School Journal}, 96(4):415--422, 1996.
+
+\bibitem{wccd}
+West China~City Daily.
+\newblock Survey: Over 90\% children claim that their parents do not have
+  enough time to accompany them.
+\newblock 2014. http://edu.sina.com.cn/zxx/2014-12-26/0813450854.shtml.
+
+\bibitem{dhenakaran2011web}
+SS~Dhenakaran and K~Thirugnana Sambanthan.
+\newblock Web crawler-an overview.
+\newblock {\em International Journal of Computer Science and Communication},
+  2(1):265--267, 2011.
+
+\bibitem{goldberg2014word2vec}
+Yoav Goldberg and Omer Levy.
+\newblock word2vec explained: deriving mikolov et al.'s negative-sampling
+  word-embedding method.
+\newblock {\em arXiv preprint arXiv:1402.3722}, 2014.
+
+\bibitem{grossman2010computers}
+Lev Grossman.
+\newblock How computers know what we want—before we do.
+\newblock {\em TIME magazine}, 27, 2010.
+
+\bibitem{happe1995role}
+Francesca~GE Happe.
+\newblock The role of age and verbal ability in the theory of mind task
+  performance of subjects with autism.
+\newblock {\em Child development}, 66(3):843--855, 1995.
+
+\bibitem{rh}
+Rayna Hollander.
+\newblock Amazon is looking to drive user retention for alexa skills.
+\newblock 2017. http://www.businessinsider.com/
+  amazon-is-looking-to-drive-user-retention-for-alexa-skills-2017-11.
+
+\bibitem{jafarkarimi2012naive}
+Hosein Jafarkarimi, Alex Tze~Hiang Sim, and Robab Saadatdoost.
+\newblock A naive recommendation model for large databases.
+\newblock {\em International Journal of Information and Education Technology},
+  2(3):216, 2012.
+
+\bibitem{jones1972home}
+Pauline~A Jones.
+\newblock Home environment and the development of verbal ability.
+\newblock {\em Child Development}, pages 1081--1086, 1972.
+
+\bibitem{kusner2015word}
+Matt Kusner, Yu~Sun, Nicholas Kolkin, and Kilian Weinberger.
+\newblock From word embeddings to document distances.
+\newblock In {\em International Conference on Machine Learning}, pages
+  957--966, 2015.
+
+\bibitem{le2014distributed}
+Quoc Le and Tomas Mikolov.
+\newblock Distributed representations of sentences and documents.
+\newblock In {\em Proceedings of the 31st International Conference on Machine
+  Learning (ICML-14)}, pages 1188--1196, 2014.
+
+\bibitem{liu2010personalized}
+Jiahui Liu, Peter Dolan, and Elin~R{\o}nby Pedersen.
+\newblock Personalized news recommendation based on click behavior.
+\newblock In {\em Proceedings of the 15th international conference on
+  Intelligent user interfaces}, pages 31--40. ACM, 2010.
+
+\bibitem{lops2011content}
+Pasquale Lops, Marco De~Gemmis, and Giovanni Semeraro.
+\newblock Content-based recommender systems: State of the art and trends.
+\newblock In {\em Recommender systems handbook}, pages 73--105. Springer, 2011.
+
+\bibitem{mctear2016introducing}
+Michael McTear, Zoraida Callejas, and David Griol.
+\newblock Introducing the conversational interface.
+\newblock In {\em The Conversational Interface}, pages 1--7. Springer, 2016.
+
+\bibitem{ricci2011introduction}
+Francesco Ricci, Lior Rokach, and Bracha Shapira.
+\newblock Introduction to recommender systems handbook.
+\newblock In {\em Recommender systems handbook}, pages 1--35. Springer, 2011.
+
+\bibitem{as}
+Alexandra Sifferlin.
+\newblock 6-month-old babies are now using tablets and smartphones.
+\newblock 2015. http://time.com/3834978/babies-use-devices/.
+
+\bibitem{vandewater2007digital}
+Elizabeth~A Vandewater, Victoria~J Rideout, Ellen~A Wartella, Xuan Huang,
+  June~H Lee, and Mi-suk Shim.
+\newblock Digital childhood: electronic media and technology use among infants,
+  toddlers, and preschoolers.
+\newblock {\em Pediatrics}, 119(5):e1006--e1015, 2007.
+
+\end{thebibliography}

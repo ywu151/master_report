@@ -1,0 +1,241 @@
+\documentclass[twoside,twocolumn]{article}
+
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{graphicx}
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyfoot{} % Blank out the default footer
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\Huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{A Story Recommendation System for SlugChat, a Kids Chatbot} % Article title
+\author{%
+\textsc{Yifei Wu}% Your name
+\normalsize University of California, Santa Cruz \\ % Your institution
+\normalsize ywu151@ucsc.edu\\ % Your email address
+%\and % Uncomment if 2 authors are required, duplicate these 4 lines if more
+%\textsc{Jane Smith}\thanks{Corresponding author} \\[1ex] % Second author's name
+%\normalsize University of Utah \\ % Second author's institution
+%\normalsize \href{mailto:jane@smith.com}{jane@smith.com} % Second author's email address
+}
+\date{\today} % Leave empty to omit a date
+\renewcommand{\maketitlehookd}{%
+\begin{abstract}
+\noindent 
+I don't know what to wite now. I will write it in the future.
+\end{abstract}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+\lettrine[nindent=0em,lines=3]{C}hildhood is the beginning of human life and plays an essential role. Some researches show that a better childhood may provide a better developement in many fields like intelligence and verbal ability. A good method to achieve these is to chat more with kids especially in their first eight years\cite{1,2}.
+\\
+Most children could get a better vocabulary acquisition by listening to stories and explanations of target words from their parents\cite{3}. However, no all parents have enough time to chat with their kids. For example, a report indicts that over 90\% children complain their parents lack of time to chat with\cite{4}.
+\\
+On the other hand, although some parents would not have enough time to speak to their kids, children spend inceasing time on electronic devices\cite{5}. These devices use many technologies to improve user experience, such as AI chatbot and recommondation system.
+\\
+AI chatbot will provide children an excellent platform to practise verbal ability. Furthermore, recent reports show that kids under 6 have great interests in interacting with electronic devices despite limited literacy\cite{6}. Nowadays, almost all IT giants develop their own chatbots like Amazon's Alexa which provides functions over Music \& Radio, Game or Trivia, and Podcast\cite{7}. Among these chatbots, there are also excellent products for kids, such as Tyche, ibotn, BeanQ, and Apphome\cite{8}.
+Recommondation systems have the effect of guiding users in a personalized way to interesting objects in a large space of possible options\cite{9}.
+\\
+Unfortunately, most of current recommondation systems are designed for all ages. And there are no public available papers about recommondation systems for children entertainment, such as short stories for kids.
+\\
+In this paper, we present a short story recommondation system for kids in Mandarin and implement this system on a new mobile application for kids, Slugchat, who has the ability to tell stories, sing children's songs, read poems, and answer some general questions for kids.
+
+
+
+
+%------------------------------------------------
+
+\section{Related Work}
+In order to build a story recommondation system and implement it on a chatbot, we need technologies of deferent areas. We introduce these technologies in this section.
+
+\subsection{Web Crawler}
+A web crawler sometimes called a spider, is a program which is able to browse the World Wide Web methodically and automatically\cite{10}. Web crawler will collect massive data from various sources. This data will remain in an unstructured form. We call them raw data and we need to derive useful values from them. Thus,  web crawling is usually the first step of work.
+
+\subsection{Word Segmentation}
+In languages such as English, words are separeted by spaces. While there are no spaces beween words in sentences in Mandarin. It is hard to analysis word token directly. In this project, we use a python liberary 'jieba' to do word segementation. We build a  dictionary for kids. 
+
+\subsection{Word \& Story Vector}
+Word2vec is a group of related models. Each unique word is assigned a vector in the space (or position). Words cotain familiar contexts are located nearby\cite{11}. This model could be trained by giving a large corpus of text. In this project, we build a word2vec model for kids words in Mandarin.
+There are several ways to represent a story, such as Word Mover’s Distance\cite{12}, Bag of Words and Paragraph Vector\cite{13}. In this project, we use bag of words to represent stories. And in future work, we will use the states in RNN to present each story.
+
+\subsection{Dialogue System}
+The developers of dialogue systems need to design conversation flows and rules to make systems work well\cite{14}. Luckily, there are some wonderful platfroms, such as Dialogflow, wit.ai, IBM Watson, Microsoft LUIS and Rulai. They help developers build systems automatically and provide codeless interfaces for designing dialogue flows\cite{15}. In this project, we use to Dialogflow. We build a set of intents, entities and contexts to implement our dialog and we use webhook to post responses from our servers.
+
+\subsection{}
+
+\section{Achitechture}
+
+\section{Implementetion}
+
+\section{Experiments}
+
+\section{Future Work}
+
+\section{Methods}
+
+Test part 
+\begin{itemize}
+\item test items1
+\item Ctest items1
+\end{itemize}
+\blindtext % Dummy text
+
+\ref{eq:emc} This document is an example of \texttt{thebibliography,knuthwebsite} environment using 
+in bibliography management. Three items are cited: \textit{The \LaTeX\ Companion} 
+book \cite{latexcompanion}, the Einstein journal paper \cite{einstein}, and the 
+Donald Knuth's website \cite{knuthwebsite}. The \LaTeX\ related items are
+\cite{latexcompanion,knuthwebsite}. 
+\\ figure text \ref{fig:test} 
+
+%------------------------------------------------
+
+\section{Results}
+
+\begin{table}
+\caption{Example table}
+\centering
+\begin{tabular}{llr}
+\toprule
+\multicolumn{2}{c}{Name} \\
+\cmidrule(r){1-2}
+First name & Last Name & Grade \\
+\midrule
+John & Doe & $7.5$ \\
+Richard & Miles & $2$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\blindtext % Dummy text
+
+\begin{equation}
+\label{eq:emc}
+e = mc^2
+\end{equation}
+
+
+
+
+
+%------------------------------------------------
+
+\section{Discussion}
+
+\subsection{Subsection One}
+
+
+\subsection{Subsection Two}
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem{1}
+Francesca G. E. Happé. 1995. The Role of Age and Verbal Ability in the Theory of Mind Task Performance of Subjects with Autism.
+
+\bibitem{2} 
+Pauline A. 1972. Jones. Home Environment and the Development of Verbal Ability
+
+\bibitem{3}
+Arlene Brett, Liz Rothlein, and Michael Hurley. 1996. Vocabulary acquisition from listening to stories and explanations of target words.
+
+\bibitem{4}
+West China City Daily. 2014. Survey: Over 90\% children claim that their parents do not have enough time to accompany them.
+
+\bibitem{5}
+Elizabeth A. Vandewater, Victoria J. Rideout, Ellen A. Wartella, Xuan Huang, June H. Lee, Mi-suk Shim 2007. Digital Childhood: Electronic Media and Technology Use Among Infants, Toddlers, and Preschoolers.
+
+\bibitem{6}
+Alexandra Sifferlin. 2015. 6-Month-Old Babies Are Now Using Tablets and Smartphones.
+
+\bibitem{7}
+Rayna Hollander. 2017. Amazon is looking to drive user retention for Alexa skills.
+
+\bibitem{8}
+ChinaByte. 2017. 5 Robots for Kids Worth Paying for.
+
+\bibitem{9}
+Pasquale Lops, Marco de Gemmis, Giovanni Semeraro. 2010. Content-based Recommender Systems: State of the Art and Trends.
+
+\bibitem{10}
+S.S. Dhenakaran, K. Thirugnana Sambanthan. 2011. Web Crawler-an Overview.
+
+\bibitem{11}
+Yoav Goldberg, Omer Levy. 2014. Word2vec Explained: deriving Mikolov et al.'s negative-sampling word-embedding method
+
+\bibitem{12}
+Matt J. Kusner, Yu Sun, Nicholas I. Kolkin, Kilian Q. Weinberger. 2015. From Word Embeddings To Document Distances.
+
+\bibitem{13}
+Q. V. Le and T. Mikolov. 2014. Distributed representations of sentences and documents.
+
+\bibitem{14}
+Sameera A Abdul-Kader and John Woods. 2015. Survey on chatbot
+design techniques in speech conversation systems.
+
+\bibitem{15}
+Michael McTear, Zoraida Callejas, and David Griol. 2016. Introducing the Conversational Interface.
+
+\bibitem{}
+\bibitem{}
+\bibitem{}
+\bibitem{}
+\bibitem{}
+ 
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+\grid
